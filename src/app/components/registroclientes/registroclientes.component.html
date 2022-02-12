@@ -1,0 +1,72 @@
+<app-head></app-head>
+<div class="elementoreg">
+    <div class="container" id="advanced-search-form">
+        <h2 class="title">Sistema de Registro de Clientes > Banco Americas</h2>
+        <div class="input-group cajainput">
+            <div class="form-group col-md-3">
+                <input type="text" name="1nomUser" class="form-control" placeholder="Primer Nombre*" [(ngModel)]="customer.firstName" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="2nomUser" class="form-control" placeholder="Segundo Nombre*" [(ngModel)]="customer.secondName" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="1apeUser" class="form-control" placeholder="Primer Apellido*" [(ngModel)]="customer.firstSurName" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="2apeUser" class="form-control" placeholder="Segundo Apellido*" [(ngModel)]="customer.secondSurName" /><br>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="passport" class="form-control" placeholder="Numero de Pasaporte" [(ngModel)]="customer.passport" /><br>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="cellphone" class="form-control" placeholder="Numero de Celular*" [(ngModel)]="customer.phoneOne" /><br>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="telephone" class="form-control" placeholder="Numero de Telefono" [(ngModel)]="customer.phoneTwo" /><br>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="adress1" class="form-control" placeholder="Direccion Principal*" [(ngModel)]="customer.mainAddressOne" />
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="adress2" class="form-control" placeholder="Direccion Opcional" [(ngModel)]="customer.optionalAddres" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="telephoneref1" class="form-control" placeholder="Telefono de Referencia 1" [(ngModel)]="customer.referencePhoneOne" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="telephoneref2" class="form-control" placeholder="Telefono de Referencia 2" [(ngModel)]="customer.referencePhoneTwo" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="status" class="form-control" placeholder="Estado Civil*" [(ngModel)]="customer.civilStatus" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="nameperscontact" class="form-control" placeholder="Nombre del Contacto*" [(ngModel)]="customer.contactName" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="telperscontact" class="form-control" placeholder="Celular del Contacto*" [(ngModel)]="customer.contactPhone" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="text" name="empresalaboral" class="form-control" placeholder="Nombre de la Empresa" [(ngModel)]="customer.companyName" /><br>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="profession" class="form-control" placeholder="Profesion*" [(ngModel)]="customer.profession" /><br>
+            </div>
+            <div class="form-group col-md-3">
+                <label></label>
+            </div>
+            <div class="form-group col-md-8">
+                <button type="button" class="btn btn-outline-primary buttonstyles" (click)="saveCustomer()">Ingresar
+          Cliente</button>
+                <button type="button" class="btn btn-outline-primary buttonstyles" (click)="clearCustomer()">Limpiar Formulario</button>
+                <a routerLink="/editarclientes">
+                  <button type="button" class="btn btn-outline-primary buttonstyles" (click)="goToDataList()">Mostrar Datos de Clientes</button>
+                </a>
+            </div>
+            <div class="form-group col-md-12">
+                <div class="alert alert-{{ error ? 'danger' : 'success' }} message" role="alert" *ngIf="msg != ''">
+                    {{msg}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
