@@ -2,7 +2,7 @@
     "name": "bancoamericas",
     "version": "0.0.0",
     "scripts": {
-	"postbuild": "ng build --prod",   
+        "postbuild": "ng build --prod",
         "ng": "ng",
         "start": "ng server.js",
         "build": "ng build",
@@ -12,27 +12,28 @@
     },
     "private": true,
     "dependencies": {
-        "@angular/animations": "~9.1.13",
-        "@angular/common": "~9.1.13",
-        "@angular/compiler": "~9.1.13",
-        "@angular/core": "~9.1.13",
-        "@angular/forms": "~9.1.13",
-        "@angular/platform-browser": "~9.1.13",
-        "@angular/platform-browser-dynamic": "~9.1.13",
-        "@angular/router": "~9.1.13",
-        "rxjs": "~6.5.4",
-        "tslib": "^1.10.0",
-        "zone.js": "~0.10.2",
-	"@angular/cli": "~9.1.13",
-        "@angular/compiler-cli": "~9.1.13",
-	"typescript": "~3.8.3"
-
+        "@angular/animations": "~12.2.0",
+        "@angular/cli": "~12.2.0",
+        "@angular/common": "~12.2.0",
+        "@angular/compiler": "~12.2.0",
+        "@angular/compiler-cli": "~12.2.0",
+        "@angular/core": "~12.2.2",
+        "@angular/forms": "~12.2.2",
+        "@angular/platform-browser": "~12.2.0",
+        "@angular/platform-browser-dynamic": "~12.2.0",
+        "@angular/router": "~12.2.0",
+        "express": "^4.17.2",
+        "path": "^0.12.7",
+        "rxjs": "7.5.0",
+        "tslib": "^2.3.0",
+        "typescript": "~4.5.2",
+        "zone.js": "~0.11.4"
     },
     "devDependencies": {
-        "@angular-devkit/build-angular": "~0.901.13",
-        "@types/node": "^12.11.1",
-        "@types/jasmine": "~3.5.0",
+        "@angular-devkit/build-angular": "~12.2.3",
+        "@types/jasmine": "~3.10.0",
         "@types/jasminewd2": "~2.0.3",
+        "@types/node": "^12.11.1",
         "codelyzer": "^5.1.2",
         "jasmine-core": "~3.5.0",
         "jasmine-spec-reporter": "~4.2.1",
@@ -47,8 +48,7 @@
     },
     "engines": {
         "node": "12.20.0",
-         "npm": "8.5.0"
-     
-    }
+        "npm": "8.5.0"
+      }
 
 }
