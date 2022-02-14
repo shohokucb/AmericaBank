@@ -4,7 +4,7 @@
     "scripts": {
         "postbuild": "ng build --prod",
         "ng": "ng",
-        "start": "karma.conf.js",
+        "start": "server.js",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
