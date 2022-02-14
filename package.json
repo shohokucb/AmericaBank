@@ -4,7 +4,7 @@
     "scripts": {
         "postbuild": "ng build --prod",
         "ng": "ng",
-        "start": "node index.js",
+        "start": "serve.js",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
