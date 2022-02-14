@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "engines": {
       "node": "16.13.2",
-      "npm": "8.3.220"
+      "npm": ""
     },
     "scripts": {
        "heroku-postbuild": "ng build --prod",
@@ -27,6 +27,7 @@
         "@angular/platform-browser": "~9.1.13",
         "@angular/platform-browser-dynamic": "~9.1.13",
         "@angular/router": "~9.1.13",
+        "bootstrap": "^5.0.2",
         "express": "^4.17.2",
         "path": "^0.12.7",
         "rxjs": "~6.5.4",
