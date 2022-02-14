@@ -4,7 +4,7 @@
     "scripts": {
         "postbuild": "ng build --prod",
         "ng": "ng",
-        "start": "serve.js",
+        "start": "node index.js",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
@@ -45,9 +45,5 @@
         "protractor": "~7.0.0",
         "ts-node": "~8.3.0",
         "tslint": "~6.1.0"
-    },
-    "engines": {
-      "node": "12.20.0",
-      "npm": "8.5.0z"
     }
 }
