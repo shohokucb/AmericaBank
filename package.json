@@ -1,16 +1,12 @@
 {
     "name": "bancoamericas",
     "version": "0.0.0",
-
-    "npm install serve --s"
     "scripts": {
-        "dev": "react-scripts start",
         "ng": "ng",
-        "start": "serve -s buid",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "heroku-postbuild": "npm run build",
+        "start": "node server.js",
+        "build": "ng build",
+        "test": "ng test",
+        "postbuild": "ng build --prod",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
